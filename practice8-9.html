@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>라인을 클릭하는 순서</title>
+    <style>
+        li {
+            background-color: yellowgreen;
+            padding: 5px;
+            margin: 5px;
+        }
+    </style>
+    <script>
+        let index = 0;
+        const prompts = [
+            "첫 번째 문장을 입력하세요",
+            "두 번째 문장을 입력하세요",
+            "세 번째 문장을 입력하세요"
+        ];
+
+        function changeListText(element) {
+            if (index < prompts.length) {
+                const newText = prompt(prompts[index]);
+                if (newText) {
+                    element.innerHTML = newText;
+                    index++;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3>라인을 클릭하는 순서</h3>
+    <ol>
+        <li onclick="changeListText(this)">첫 번째 줄</li>
+        <li onclick="changeListText(this)">두 번째 줄</li>
+        <li onclick="changeListText(this)">세 번째 줄</li>
+    </ol>
+</body>
+</html>

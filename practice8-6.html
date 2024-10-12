@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerHTML 예제</title>
+    <script>
+        function changeText(element) {
+            const newText = prompt("새로운 텍스트를 입력하세요:");
+            if (newText) {
+                element.innerHTML = newText;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>innerHTML</h2>
+    <p onclick="changeText(this)">HTML 텍스트를 클릭하여 변경하세요!</p>
+</body>
+</html>
