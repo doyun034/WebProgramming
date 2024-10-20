@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout 시계</title>
+    <script>
+        let timeoutID;
+
+        function startClock() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString();
+            document.getElementById("clock").innerHTML = timeString;
+            timeoutID = setTimeout(startClock, 1000);  // 1초마다 업데이트
+        }
+
+        window.onload = function() {
+            startClock();
+        };
+    </script>
+</head>
+<body>
+    <h2>div 태그에 시계 만들기</h2>
+    <hr>
+    <div id="clock"></div>
+</body>
+</html>

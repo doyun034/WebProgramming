@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>실습문제 10-5</title>
+  <script>
+    let div;
+    let now;
+    let timer;
+    function startClock() {
+      div = document.getElementById('div');
+      now = new Date();
+      timer = setInterval('showTime();', 1000);
+    }
+    function showTime() {
+      now = new Date();
+      div.innerHTML = now.toLocaleTimeString();
+      /* setTimeout('showTime();', 1000); */
+    }
+    function stop_start_Clock() {
+      clearInterval(timer);
+      timer = null;
+    }
+  </script>
+</head>
+<body onload="startClock();">
+  <h2>div에 시계만들기</h2>
+  <hr>
+  <div id="div" onlcick="stop_start_Clock();">
+
+  </div>
+  <!--script>
+    let div = document.getElementById('div');
+    let now = new Date();
+    setInterval('showTime();', 1000);
+    
+
+    function showTime() {
+      now = new Date();
+      div.innerHTML = now.toLocaleTimeString();
+    }
+  <--script -->
+</body>
+</html>

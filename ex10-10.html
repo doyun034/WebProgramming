@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>브라우저 정보 출력</title>
+  <style>
+    span{color: red;}
+    div{
+      border-color: yellowgreen;
+      border-style: solid;
+      padding: 5px;
+    }
+  </style>
+
+  <script>
+    function printNavigator(){
+      let text = "<span>appCodeName</span>: " + navigator.appCodeName + "<br>";
+      text += "<span>appVersion</span>: " + navigator.appVersion + "<br>";
+      text += "<span>platform</span>: " + navigator.platform + "<br>";
+      text += "<span>product</span>: " + navigator.product + "<br>";
+      text += "<span>userAgent</span>: " + navigator.userAgent + "<br>";
+      text += "<span>vendor</span>: " + navigator.vendor + "<br>";
+      text += "<span>language</span>: " + navigator.language + "<br>";
+      text += "<span>onLine</span>: " + navigator.onLine + "<br>";
+      text += "<span>cookieEnabled</span>: " + navigator.cookieEnabled + "<br>";
+      text += "<span>javaEnabled</span>: " + navigator.javaEnabled() + "<br>";
+      text += "<span>plugins.length</span>: " + navigator.plugins.legth + "<br>";
+
+      for(let j = 0; j < navigator.plugins.legth; j++){
+        text += "plugins" + j + " :<blockquote>";
+        text += navigator.plugins[j].name + "<br>";
+        text += "<i>" + navigator.plugins[j].description + "</i><br>";
+        text += navigator.plugins[j].filename + "</blockquote>";
+      }
+
+      let div = document.getElementById("div");
+      div.innerHTML = text;
+    }
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
