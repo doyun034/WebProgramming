@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <ul id="links">
+        <!-- 여기에 DB에서 가져온 링크가 표시됩니다 -->
+    </ul>
+    <script>
+        // DB 데이터를 AJAX로 가져와 링크를 표시하는 코드
+        fetch('/fetch-links.php')
+            .then(response => response.json())
+            .then(data => {
+                const ul = document.getElementById('links');
+                data.forEach(item => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<a href="${item.url}">${item.title}</a>`;
+                    ul.appendChild(li);
+                });
+            });
+    </script>
+</body>
+</html>
