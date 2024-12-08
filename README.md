@@ -73,6 +73,33 @@
 - practice13-9.html: 시작과 끝 숫자를 전달받아 합을 구하는 워커 태스크
 - practice13-10.html: 타이머를 가진 웹 워커 만들기
 
+## Final_Exam_Practice 폴더
+
+- ch12 폴더: 교제 12장 전체 실습문제
+
+  - nameNum-store.html: 실습문제 12-1
+  - nameNum-search.html: 실습문제 12-1
+  - purchaseList-store.html: 실습문제 12-2
+  - purchaseList-search.html: 실습문제 12-2
+  - postIt-store.html: 실습문제 12-3
+  - postIt-view.html: 실습문제 12-3
+  - diary-store.html: 실습문제 12-4
+  - diary-view.html: 실습문제 12-4
+  - cityFood-view.html: 실습문제 12-5
+  - cityFood-form.html: 실습문제 12-5
+  - createNote.html: 오픈 챌린지
+  - createNote02.html: 오픈 챌린지
+
+- ch13 폴더: 교제 13장 전체 실습문제
+  - videoControll.html: 실습문제 13-1
+  - tableAudio.html: 실습문제 13-2
+  - audioRepeat.html: 실습문제 13-3
+  - audioContinue.html: 실습문제 13-4
+  - walkerTestGrade.html: 실습문제 13-5
+  - walkerTestGrade.js: 실습문제 13-5
+  - walkerTestMulit.html: 실습문제 13-6
+  - walkerTestMulti.js:: 실습문제 13-6
+
 ## 그 외
 
 - css-flex.html: Display: Flex
