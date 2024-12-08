@@ -91,6 +91,7 @@
   - createNote02.html: 오픈 챌린지
 
 - ch13 폴더: 교제 13장 전체 실습문제
+
   - videoControll.html: 실습문제 13-1
   - tableAudio.html: 실습문제 13-2
   - audioRepeat.html: 실습문제 13-3
@@ -99,6 +100,29 @@
   - workerTestGrade.js: 실습문제 13-5
   - workerTestMulit.html: 실습문제 13-6
   - workerTestMulti.js:: 실습문제 13-6
+
+- node 폴더: PPT 13주차 전체 연습문제
+  - calc1.js: 모듈 간단 계산
+  - calc2.js: 모듈 객체 기반 계산
+  - consoleObj.js: console.log 데이터 출력
+  - eventLoop.js: 이벤트 루프 + 비동기 작업 처리
+  - eventStack.js: 이벤트 기반 스택
+  - ex1.js: calc1.js 모듈 호출
+  - ex2.js: calc2.js 모듈 호출
+  - filePath.js: 파일 경로 분석
+  - fileRequest.js: 동기식 파일 읽기
+  - fileRequest2.js: 비동기식 파일 읽기
+  - httpObj.js: http 요청을 외부 서버에서 처리
+  - importModuel.js: 외장 모듈로 환경 변수 관리
+  - non-Blocking.js: Non-Blocking 동기식 실행
+  - non-Blocking2.js: Non-Blocking 비동기식 실행
+  - objFunc.js: 객체 속성 출력
+  - osModuel.js: OS 모듈 사용
+  - pathModuel.js: Path 모듈 사용
+  - processArgv.js: process.argv를 사용하여 출력
+  - processEnv.js: process.env를 사용하여 출력
+  - simpleHttp.js: HTTP 서버 생성
+  - timeEstimate.js: .time() 그리고 .timeEnd()로 시간 측정
 
 ## 그 외
 
