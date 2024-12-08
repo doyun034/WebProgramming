@@ -95,10 +95,10 @@
   - tableAudio.html: 실습문제 13-2
   - audioRepeat.html: 실습문제 13-3
   - audioContinue.html: 실습문제 13-4
-  - walkerTestGrade.html: 실습문제 13-5
-  - walkerTestGrade.js: 실습문제 13-5
-  - walkerTestMulit.html: 실습문제 13-6
-  - walkerTestMulti.js:: 실습문제 13-6
+  - workerTestGrade.html: 실습문제 13-5
+  - workerTestGrade.js: 실습문제 13-5
+  - workerTestMulit.html: 실습문제 13-6
+  - workerTestMulti.js:: 실습문제 13-6
 
 ## 그 외
 
